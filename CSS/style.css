@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:'beyno regular' ;
+    src: url('../Police/beyno-regular/beyno-regular.otf');
+}
+
+@font-face {
+    font-family: 'panthera';
+    src: url('../Police/panthera/panthera.otf');
+}
+@font-face {
+    font-family: 'wakandaForever regular';
+    src: url('../Police/wakanda_forever/WakandaForever-Regular.ttf');
+}
+
+@font-face {
+    font-family:'Cantarell Regular';
+    src: url('../Police/cantarell/Cantarell-Regular.ttf');
+}
+body{
+    overflow-x: hidden;
+}
+body{
+    background-image: url('../Illustrations_logos/All_pages/arriere_plan.png');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    top: 0;
+    margin: 0 auto;
+    margin-left: -5%;
+    margin-right: -5%;
+}
+/* -------------------------------- Style sur menu droite -------------------------- */
+.menu-droite ul{
+    display: flex;
+    list-style: none;
+    
+}
+.menu-droite ul li{
+    margin-left: 5%;
+    padding: 2% 0 10% 0%;
+}
+.menu-droite ul li a{
+    text-decoration: none;
+}
+.menu-droite h2{
+    font-size: 32px;
+    font-family: 'beyno regular';
+}
+
+.menu-droite a{
+    color: #9E91B740;
+}
+/* Survole */
+
+.menu-droite h2 a:hover{
+    color: white;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    /*text-decoration: dotted;*/
+}
+.current a{
+    color: violet;
+    border-bottom: 3px solid violet;
+    border-bottom-width: ;
+    padding-bottom: 10px;
+}
+/* ---------------------Fin menu droite----------------------------- */
+
+/* Ceci est un style du logo droite */
+
+.logo-gauche{
+    position: relative;
+    margin-top: 1%;
+    height: 5vh;
+}
+
+.logo-gauche ul{
+    list-style: none;
+    display: flex;
+}
+
+.logo-gauche ul li .icons{
+    margin: 10px 3px 3px;
+}
+h1, h2{
+    color: #9E91B7;
+}
+
+h1{
+    font-family: 'panthera';
+    font-size: 66px;
+}
+p{
+    font-family:'Cantarell Regular';
+    color: white;
+}
+
+/* Background intoduction sur wakanda */
+
+#intro{
+    width: 100%;
+    background-image: url('../Illustrations_logos/Wakanda/Pantherwakanda10.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.image img{
+    width: 130%;
+    height: 100vh;
+}
+.intro{
+    position: absolute;
+    width: 60%;
+    padding-left: 10%;
+    margin-top: 15%;
+    z-index: 15;
+}
+/*Fade in style*/
+.intro{
+    animation: fadeIN 5s;
+}
+@keyframes fadeIN {
+
+    from{
+        opacity: 0;
+        margin-left: -2000px;
+        width: 100%;
+    }
+
+    to{
+        opacity: 1;
+        margin-left: 0;
+    }
+    
+}
+.intro h2{
+    font-family: 'wakandaForever regular';
+    font-size: 43px;
+}
+.texte-intro{
+    width: 52%;
+}
+.texte-intro p{
+    font-family:'Cantarell Regular';
+    font-size: 12px;
+    text-align: justify;
+}
+
+.fond{
+    background-image: url('../Illustrations_logos/Wakanda/Pantherwakanda2.png');
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-top: -5%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 10%;
+    margin: 0 10%;
+}
+
+.texte{
+    width: 95%;
+    height: auto;
+}
+
+.texte p{
+    font-family:'Cantarell Regular';
+    font-size: 12px;
+    text-align: justify;
+}
+
+.texte h2{
+    font-size: 22px;
+    font-family: 'beyno regular';
+}
+
+.texte-image img{
+    width: 100%;
+}
+
+.texte-video img{
+    width: 100%;
+}
+
+.fixe-fond{
+    position: sticky;
+    margin-top: -340%;
+    margin-left: 22%;
+    width: 80%;
+}
+
+.fixe-fond img{
+    width: 200%;
+    opacity: 0.9;
+}
+
+
+/*!__________________________________________________Debut styles pied du page_______________________________________________________!*/
+
+/* -------------------------Ajout du background image pied du page --------------- */
+
+footer{
+    background-image: url('../Illustrations_logos/All_pages/back_footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65%;
+    height: 50vh;
+}
+
+/* ------------------------Styles grid sur pied du page------------------------ */
+
+.pied-page{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    justify-content: space-between;
+    padding-top: 5%;
+    margin-left: 5%;
+}
+
+.pied-page #image-cercle ul{
+    list-style: none;
+}
+
+/* ------------------------Styles classe sur grid ----------------------------- */
+/* ----------------------Styles sur image cercle ----*/
+.pied-contenu:nth-of-type(1){
+    width: 60%;
+    height: 100%;
+    margin-left: 30%;
+}
+.pied-contenu:nth-of-type(1):hover{
+    width: 65%;
+    height: 102%;
+}
+#image-cercle .fond-sayna1{
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+.sous-image{
+    position: relative;
+    margin-top: -75%;
+    margin-left: -30%;
+}
+
+.sous-image img{
+    width: 28%;
+}
+
+
+/*-----------------------------Fin image cercle*/
+
+
+/* -----------------------Styles d'ajustement logo sayana X marvel--------------*/
+
+.pied img{
+    margin-top: 21%;
+    margin-left: 47%;
+}
+
+/* ---------------------Styles tailles textes------------------------------------ */
+
+
+/* ---------------------Met une espace entre PAGE et RETROUVEZ NOUS ------------- */
+.espace{
+    letter-spacing: 212px;
+    font-family:'Cantarell Regular';
+}
+
+/* ---------------------Grid  a propos et icons-----------------------------------*/
+.foot{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    justify-content: space-between;
+    margin-left: -3%;
+}
+
+.foot-item{
+    width: 61%;
+    height:auto;
+    text-align: center;
+    margin-top: -10%;
+}
+
+.foot-item p{
+    font-size: 18px;
+}
+
+.rs p{
+    font-size: 16px;
+}
+
+/* ---------------------Styles largeur icones réseau sociaux---------------------- */
+.foot-icon{
+    width: 60%;
+    margin-top: -2%;
+    margin-left: 24%;
+}
+
+.foot-icon ul{
+    list-style: none;
+    display: flex;
+    width: 55%;
+}
+
+/* ---------------------Styles sur icon footer-----------------------------------  */
+.foot-icon img{
+    width: 70%;
+    height: auto;
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;  
+}
+
+/* ---------------------Zoom 10% icon reseaux sociaux--------------------------- */
+
+.icon-pied:hover{
+    scale: 110%;
+}
+
+/* ----------------------Autre grid----------------------------------------------*/
+.grid-pied{
+    width: 100%;
+    grid-template-rows: 45% 25%;
+}
+
+/* ----------------------Pour Separer le deux grid ----------------------------- */
+.rs{
+    height: 15%;
+}
+/* ----------------------Ajout une espace vers bas Copyright text ---------------*/
+.rs:nth-of-type(2){
+    margin-top: 12%;
+}
+
+

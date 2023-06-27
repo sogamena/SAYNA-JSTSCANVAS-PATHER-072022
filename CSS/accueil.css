@@ -1,0 +1,477 @@
+
+/*Debut style sur double ligne droite */
+.accueil{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 20px;
+    margin-top: -8%;
+    margin-left: 2%;
+}
+/* Epaisseur et couleur ligne */
+.trait1, .trait2{
+    width: 3px;
+    background: #9E91B7;
+}
+/* Hauteur ligne */
+.trait1{
+    height: 410px;
+}
+.trait2{
+    height: 300px;
+}
+/* Icons reseau sociaux  */
+.icon-fixe{
+    position: fixed;
+    margin-top: 15%;
+    margin-left: 2.5%;
+}
+.icon-fixe ul{
+    list-style: none;
+}
+.icon-fixe ul img:hover{
+    filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(2%) hue-rotate(258deg) brightness(109%) contrast(101%);
+}
+.accueil-contenu{
+    display: grid;
+    grid-template-columns: 55% 55%;
+    margin-left: 10%;
+}
+/* Fin style ligne */
+
+.grid-accueil:nth-of-type(1){
+    margin-top: 17%;
+}
+
+.grid-accueil:nth-of-type(2){
+    margin-left: -25%;
+}
+
+/* #heros, #chala, .grid-accueil:nth-of-type(1){
+    animation: fadeIN 5s;
+} */
+@keyframes fadeIN {
+
+    from{
+        opacity: 0;
+        margin-left: -1000px;
+        width: 100%;
+    }
+
+    to{
+        opacity: 1;
+        margin-left: 0;
+    }
+    
+}
+
+#texte{
+    width: 72%;
+}
+
+/* Styele sur photos adversaire et allier */
+#heros{
+    width: 90%;
+    background: #021740;
+    margin-left: 10%;
+    height: 50%;
+}
+
+
+.tous .nom-heros{
+    display: grid;
+    grid-template-columns: 200px 200px  200px 200px;
+    margin-left: 105%;
+    justify-content: space-between;
+
+}
+
+
+.item h2{
+    font-family: 'beyno regular';
+    font-size: 32px;
+}
+
+.item p{
+    text-align: justify;
+    font-size: 75%;
+}
+/* Debut image accueil */
+.heros-accueil{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 13% 25% 15% 25% 13%;
+    margin-left: 10.2% !important;
+    height: 35vh;
+}
+
+.item{
+    width: 91%;
+}
+/* Pour la taile du texte */
+.item p{
+    font-size: 69% !important;
+}
+
+.item .allier{
+    width: 100%;
+    height: 88%;
+    margin-left: 0%;
+}
+
+.item .advis{
+    width: 160%;
+    margin-top: -15%;
+    margin-left: -80%;
+}
+
+.chevron-next{
+    position: absolute;
+    background: #07338c;
+    right: 4%;
+    width: 20px;
+    margin-top: -10%;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    font-family:'Cantarell Regular';
+    cursor: pointer;
+}
+
+.grid-accueil img{
+    width: 100%;
+}
+
+.grid-accueil h2, .chala-texte h2{
+    font-size: 32px;
+    font-family: 'beyno regular';
+}
+
+.item h2{
+    text-align: left;
+}
+
+.ht{
+    padding-top: 12%;
+}
+
+/* Debut sur classe container */
+.chala{
+    display: grid;
+    grid-template-columns: 58.5% 36% !important;
+}
+.chala-texte{
+    position: relative;
+    margin-left: 22%;
+    margin-top: 25%;
+    width: 80%;
+    transform: translateY(150px);
+    opacity: 0;
+}
+.chala-texte.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.heros-protecteur{
+    margin-top: 0%;
+}
+
+
+.chala-texte p{
+    font-family:'Cantarell Regular';
+    text-align: justify;
+}
+
+/* Blog.chala-texte gauche */
+
+.blog{
+    width: 90%;
+    height: 40%;
+    background: white;
+    margin-left: 5%;
+    margin-top: 55%;
+    border-radius: 10px;
+}
+
+.biographie{
+    align-content: center;
+    width: 80%;
+    height: 30%;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-top: 65%;
+    padding-right: 5%;
+}
+/* styles photos sur biographique */
+.biographie img{
+    position: relative;
+    margin-top: -200%;
+    width: 90%;
+    height: 200%;
+    margin-left: 5%;
+}
+.biographie h3{
+    text-align: center;
+}
+
+/* Bouton sur bio */
+#btn-bio{
+    display: flex;
+}
+.btn-bio{
+    background: #07338c;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 59.6%;
+
+}
+#bio{
+    margin: 10px;
+}
+
+#bio p{
+    color: black;
+    font-size: 58%;
+}
+.img-rond{
+    margin-top:5%;
+    margin-left: 15%;
+    width: 90%;
+}
+
+.img-rond img{
+    width: 100%;
+}
+/* ------------------------------------Contactez nous---------------------------------- */
+
+#forme .forme{
+    position: absolute;
+    background: #f2cef260;
+    width: 55%;
+    height: 85%;
+    margin-top: -45%;
+    margin-left: 25%;
+    border-radius: 150px;
+}
+
+.contact{
+    margin: 0 auto;
+    width: 55%;
+    margin-top: 55px;
+    margin-left: 15%;
+}
+
+.contact .output{
+    width: 127%; /* Equivaut width: 520px; */
+    height: 8.5vh;/* height: 56px; */
+    border-radius: 38px;
+    background: none;
+    outline: none;
+    padding-left: 15px;
+    border: 1px solid black;
+    margin-top: 4%;
+}
+
+
+.forme .web{
+    width: 127%; /* Equivaut width: 520px; */
+    padding-bottom: 25%;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-top: 10px;
+    background: none;
+    border: 1px solid black;
+    outline: none;
+    margin-top: 4%;
+}
+
+.contact .former{
+    text-align: center;
+    
+    width: 130%;
+}
+
+h4,
+p,
+button,
+::placeholder,
+.popup h1{
+    font-family:'Cantarell Regular';
+}
+
+
+
+
+/* Ceci c'est style de formulaire----------------------------------------------------- */
+
+#forme{
+    background-image: url('../Illustrations_logos/Accueil/Pantherhome7.png');
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* ----------------------forme à remplir------------- */
+
+.donner-perso{
+    position: absolute;
+    background: #f2cef260;
+    width: 65%;
+    height: 90vh;
+    border-radius: 150px;
+    margin-top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.donner-perso .text{
+    width: 100%;
+    margin-top: 8%;
+    text-align: center;
+}
+
+.text p{
+    font-family:'Cantarell Regular';
+    font-size: 70%;
+}
+
+.donner-perso form{
+    top: 8%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center !important;
+}
+
+.donner-perso form input{
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid rgb(36, 36, 36);
+    background: none;
+}
+
+.btn-afficher, .btn-afficher1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 38px;
+}
+.btn-afficher{
+    background: #f2cef2;
+    top: 90%;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-afficher:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+label{
+    width: 100px;
+    height: 30px;
+}
+.text h2{
+    color: black;
+    font-size: 54px;
+}
+label:hover .btn1{
+    cursor: pointer;
+}
+
+.donner input{
+    padding-left: 10px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.donner:nth-of-type(3) input{
+    padding-bottom: 16%;
+}
+
+/* ------------------------------------ Style sur pop up -------------------------------- */
+
+.btn-afficher1{
+    background: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #07338c;
+    cursor: pointer;
+    top: 70%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.btn-afficher1:hover{
+    background: #f2cef2;
+}
+#show:checked ~ .container1{
+    display: block;
+}
+
+.container1{
+    position: absolute;
+    background: #f2cef260;
+    border-radius: 150px;
+    margin-top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container1{
+    display: none;
+    background: #ffffff;
+    width: 65%;
+    height: 90%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.container1 .btn-fermer{
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    width: 30px;
+    height: 30px;
+    background: rgba(136, 136, 136, 0.479);
+    color: #eee;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.container1 .text{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30%;
+}
+
+.text h3{
+    text-transform: uppercase;
+    color: #07338c;
+}
+
+.btn-fermer{
+    font-size: 25px;
+}
+
+
+/*-----------------------------------------------fin style formulire ----------------------------------- */
+
+.icon-pied:hover{
+    scale: 110%;
+}
