@@ -54,10 +54,11 @@
         height: 15%;
     }
     
-    .rs:nth-of-type(2){
+    .rs:nth-of-type(1){
         text-align: center;
         width: 100%;
         margin-left: -4%;
+        background: gold;
     }
     
     .pied-contenu p{
@@ -65,30 +66,24 @@
     }
 
     /* ------------------------Styles icon réseaux sociaux ------------------------ */
-    .foot-icon{
-        width: 80%;
-        margin-left: 30%;
+    .foot-item{
+        width: 61%;
+        height:auto;
+        text-align: center;
+        margin-top: 25%;
     }
     .foot-icon img{
-        width: 15%;
+        width: 10%;
         height: auto;
         text-align: center;
         padding-left: 0%;
-        margin-left: 0%;
-        padding-right: 2%;
         
     }
     
     /* Fin styles footer */
     
-
-}
 /* Styles pour les écrans grande taille */
-@media only screen and (max-width:900px) {
-
-    /* Style pour accueil */
     
-     /* Debut styles accueil */
     
     /* Hauteur ligne */
     .trait1{
@@ -187,10 +182,7 @@
         padding-left: 20%;
         margin-top: -35%;
     }
-    h2{
-        font-family: 'wakandaForever regular';
-        font-size: 3px;
-    }
+   
     .texte-intro{
         width: 52%;
     }
@@ -232,9 +224,6 @@
     }
 
     /* ce stylepour image */
-    /* .item .allier{
-        width: 80%;
-    } */
     
     .item .advis{
         width: 100%;
@@ -253,7 +242,7 @@
         font-size: 22px;
     }
 
-    /* ------------------------------------SStyles accueil texte----- */
+    /* ------------------------------------Styles accueil texte----- */
     .chala{
         display: flex;
         flex-wrap: wrap;
@@ -294,7 +283,7 @@
         padding-left: 5%;
         padding-top: 95%;
         padding-right: 5%;
-        margin-top: -105%;
+        margin-top: -75%;
     }
 
     /* Styles sur profils T'chala */
@@ -319,9 +308,6 @@
         width: 100%;
     }            
         
-        /* Styles des formulaires a remplir */
-    
-        /* Styles biographie */
     
         /* Blog.chala-texte gauche */
     
@@ -356,6 +342,10 @@
     
     #bio p{
         font-size: 10px;
+    }
+
+    .text h2{
+        font-size: 34px;
     }
 
     
@@ -425,12 +415,22 @@
     }
 
     /* ----------------Style sur formulaire---------- */
+
+    /* ----------------Arrière plan formulaire--------------------- */
+#forme{
+    background-image: url('../Illustrations_logos/Accueil/Pantherhome7.png');
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 15%;
+}
+
+/* -------------------- Reduire taille contenue formulaire ------------------------*/
     
-    .donner-perso{
-        position: absolute;
-        margin-top: 30%;
+#forme .donner-perso{
         height: 75vh;
         border-radius: 30px;
+        margin-top: 50%;
     }
 
     .donner-perso form{
@@ -441,6 +441,7 @@
     .donner-perso form input{
         height: 35px;
     }
+
     .btn-afficher{
         top: 90%;
         padding: 5px 10px;
@@ -611,7 +612,7 @@
     }
     
     .foot-item p, .rs p{
-        font-size: 3px;
+        font-size: 20px;
     }
     .pied-contenu p{
         font-size: 10px;
@@ -662,7 +663,8 @@
 
 
     .heros-protecteur{
-        margin-top: 35%;
+        margin-top: 45%;
+        background: goldenrod;
     }
 
 
@@ -920,16 +922,15 @@
 
     /* icon réseaux sociaux */
     .foot-icon{
-        width: 80%;
-        margin-left: 20%;
+        width: 40%;
+        margin-left: 0%;
+        margin-top: 5%;
+        background: darkorange;
     }
     .foot-icon img{
-        width: 15%;
+        width: 40%;
         height: auto;
         text-align: center;
-        padding-left: 0%;
-        margin-left: 0%;
-        padding-right: 2%;
         
     }
 }
@@ -978,7 +979,7 @@
     }
 
     .heros-protecteur{
-        margin-top: 25%;
+        margin-top: 45%;
     }
 
 
@@ -986,12 +987,6 @@
 
     /* 0001 */
 
-    /* .donner-perso{
-        width: 75%;
-        height: 85%;
-        margin-top: 90%;
-        border-radius: 50px;
-    }
     
     .donner-perso .text{
         width: 100%;
@@ -1293,6 +1288,14 @@
         font-size: 6px;
     }
 
+    .foot-item{
+        width: 61%;
+        height:auto;
+        text-align: center;
+        margin-top: 20%;
+        background: greenyellow;
+    }
+
     /* ------------------------Styles icon réseaux sociaux ------------------------ */
     /* ----------------------Styles sur image cercle ----*/
 
@@ -1308,6 +1311,13 @@
 /*  */
 
 /* ---------------------Styles largeur icones réseau sociaux---------------------- */
+.foot-item{
+    position: absolute;
+    width: 61%;
+    text-align: center;
+    top: 80%;
+    background: greenyellow;
+}
 
 
 .foot-icon ul{

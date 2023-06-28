@@ -173,6 +173,10 @@
     height: 200%;
     margin-left: 5%;
 }
+
+.biographie img:hover{
+    scale: 105%;
+}
 .biographie h3{
     text-align: center;
 }
@@ -273,6 +277,7 @@ button,
     width: 100%;
     background-size: cover;
     height: 100vh;
+    margin-top: 15%;
 }
 
 /* ----------------------forme à remplir------------- */

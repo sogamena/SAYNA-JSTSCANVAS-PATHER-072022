@@ -101,6 +101,10 @@ h1{
     font-family: 'panthera';
     font-size: 66px;
 }
+
+h2:hover{
+    scale: 105%;
+}
 p{
     font-family:'Cantarell Regular';
     color: white;
@@ -397,11 +401,14 @@ footer{
     font-size: 16px;
 }
 
-/* ---------------------Styles largeur icones réseau sociaux---------------------- */
+/* ---------------------Styles sur icones réseau sociaux pied page---------------------- */
 .foot-icon{
-    width: 60%;
+    position: absolute;
+    width: 23%;
     margin-top: -2%;
-    margin-left: 24%;
+    margin-left: 16%;
+    justify-content: center;
+    display: flex;
 }
 
 .foot-icon ul{
