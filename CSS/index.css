@@ -1,50 +1,15 @@
+/* -----------------Style sur l'accueil----------------- */
 
-/*Debut style sur double ligne droite */
-.accueil{
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    width: 20px;
-    margin-top: -8%;
-    margin-left: 2%;
-}
-/* Epaisseur et couleur ligne */
-.trait1, .trait2{
-    width: 3px;
-    background: #9E91B7;
-}
-/* Hauteur ligne */
-.trait1{
-    height: 410px;
-}
-.trait2{
-    height: 300px;
-}
-/* Icons reseau sociaux  */
-.icon-fixe{
-    position: fixed;
-    margin-top: 15%;
-    margin-left: 2.5%;
-}
-.icon-fixe ul{
-    list-style: none;
-}
-.icon-fixe ul img:hover{
-    filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(2%) hue-rotate(258deg) brightness(109%) contrast(101%);
-}
-.accueil-contenu{
-    display: grid;
-    grid-template-columns: 55% 55%;
-    margin-left: 10%;
-}
-/* Fin style ligne */
-
+/* 
+  -----------Image en premier----------
+*/
 .grid-accueil:nth-of-type(1){
     margin-top: 17%;
 }
 
 .grid-accueil:nth-of-type(2){
-    margin-left: -25%;
+    position: relative;
+    left: -30%;
 }
 
 /* #heros, #chala, .grid-accueil:nth-of-type(1){
@@ -164,15 +129,12 @@
 .chala-texte{
     position: relative;
     margin-left: 22%;
-    margin-top: 25%;
+    margin-top: -10%;
     width: 80%;
     transform: translateY(150px);
-    opacity: 0;
-}
-.chala-texte.active{
-    transform: translateY(0px);
     opacity: 1;
 }
+
 .heros-protecteur{
     margin-top: 0%;
 }

@@ -1,34 +1,28 @@
-document.querySelector("#show").addEventListener("click", function(){
-    document.querySelector("#confirme").classList.add("active");
-})
+//Souris
 
-document.querySelector("#confirme .btn-fermer").addEventListener("click", function(){
-    document.querySelector("#confirme").classList.remove("active");
-})
+const souris = document.querySelector(".souris");
+let timeout;
+document.addEventListener("mousemove",(e)=> {
+    let x = e.pageX;
+    let y = e.pageY;
 
+    souris.style.top = y + "px";
+    souris.style.left = x + "px";
+    souris.style.display = "block";
 
-window.onload = ()=>{
-   let myForm = document.getElementById('myForm');
-   myForm.addEventListener('submit', function(e){
-       e.preventDefault();
-       document.getElementById('confirme').style.display = 'block';
-       window.scrollTo(top);
-   })
-}
-
-document.querySelectorAll('.chala-texte').addEvent{
-    let chalas=document.querySelectorAll('.chala-texte');
-    for(let i=0;i<chalas.length; i++){
-        let windowheight=window.innerHeight;
-        let chalaleft = chalas[i].getBoundingClientRect().top;
-        let chalaspointe = 150;
-        if(chalaleft < windowheight - chalaspointe){
-            chalas[i].classList.add('active');
-        }
-        else{
-            chalas[i].classList.remove('active');
-        }
+    function sourisStop(){
+        souris.tyle.display ="none"
     }
-}
 
-window.addEventListener('scroll', chala);
+    timeout = setTimeout(sourisStop, 1000);
+
+});
+
+document.addEventListener("mouseout",() =>{
+    souris.style.display = "none";
+});
+
+
+//////////////////////////////
+//...........LOADING........./
+//////////////////////////////

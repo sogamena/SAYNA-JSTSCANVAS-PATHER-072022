@@ -72,7 +72,7 @@ nav{
 .current a{
     color: violet;
     border-bottom: 3px solid violet;
-    border-bottom-width: ;
+    /*border-bottom-width: ;*/
     padding-bottom: 10px;
 }
 /* ---------------------Fin menu droite----------------------------- */
@@ -106,7 +106,93 @@ p{
     color: white;
 }
 
-/* Background intoduction sur wakanda */
+/* -------------------------------Logo fixe------------------------- */
+
+/*-------------------Debut style sur double trait droite ----------------*/
+.accueil{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 20px;
+    margin-top: -8%;
+    margin-left: 2%;
+}
+/*------------------épaisseur et couleur ligne-------------*/
+.trait1, .trait2{
+    width: 3px;
+    background: #9E91B7;
+}
+/*-----------------Hauteur ligne-----------------*/
+.trait1{
+    height: 410px;
+}
+.trait2{
+    height: 300px;
+}
+/*------------------Icons reseau sociaux---------------*/
+.icon-fixe{
+    position: fixed;
+    margin-top: 15%;
+    margin-left: 2.5%;
+}
+.icon-fixe ul{
+    list-style: none;
+}
+.icon-fixe ul img:hover{
+    filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(2%) hue-rotate(258deg) brightness(109%) contrast(101%);
+}
+.accueil-contenu{
+    display: grid;
+    grid-template-columns: 55% 55%;
+    margin-left: 10%;
+}
+/*------------------Fin style ligne-----------------------*/
+
+/* -----------------Debut styles mouvement Souris-------------------- */
+
+#souris{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.souris{
+    z-index: 999;
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696e8,
+                0 0 60px #2696e8,
+                0 0 100px #2696e8;
+    animation: colors 5s infinite;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.souris:before{
+    content: '';
+    position: absolute;
+    background: url('../Illustrations_logos/Enigme/logo_souris_BP1_blanc.png');
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%,-30%);
+    border-radius: 50%;
+}
+
+/* ----------------------Fin mouvement souris-------------- */
+
+/*--------------------Background intoduction sur wakanda--------------------*/
 
 #intro{
     width: 100%;
@@ -127,7 +213,7 @@ p{
     margin-top: 15%;
     z-index: 15;
 }
-/*Fade in style*/
+/*--------------------Fade in sur wakada----------------*/
 .intro{
     animation: fadeIN 5s;
 }
@@ -209,7 +295,10 @@ p{
 }
 
 
-/*!__________________________________________________Debut styles pied du page_______________________________________________________!*/
+/*-----------------------------Debut styles pied du page----------------------------*/
+
+
+/*----------------------------Debut styles pied du pages----------------*/
 
 /* -------------------------Ajout du background image pied du page --------------- */
 
@@ -236,6 +325,8 @@ footer{
 }
 
 /* ------------------------Styles classe sur grid ----------------------------- */
+
+
 /* ----------------------Styles sur image cercle ----*/
 .pied-contenu:nth-of-type(1){
     width: 60%;
@@ -263,7 +354,7 @@ footer{
 }
 
 
-/*-----------------------------Fin image cercle*/
+/*-----------------------------Fin image cercle-------------------*/
 
 
 /* -----------------------Styles d'ajustement logo sayana X marvel--------------*/
