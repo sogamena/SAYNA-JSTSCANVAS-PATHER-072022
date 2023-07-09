@@ -351,9 +351,6 @@ label{
     color: black;
     font-size: 54px;
 }
-label:hover .btn1{
-    cursor: pointer;
-}
 
 .donner input{
     padding-left: 10px;

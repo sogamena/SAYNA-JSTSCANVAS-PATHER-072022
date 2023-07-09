@@ -11,7 +11,7 @@ document.addEventListener("mousemove",(e)=> {
     souris.style.display = "block";
 
     function sourisStop(){
-        souris.tyle.display ="none"
+        souris.style.display ="block";
     }
 
     timeout = setTimeout(sourisStop, 1000);
@@ -19,7 +19,7 @@ document.addEventListener("mousemove",(e)=> {
 });
 
 document.addEventListener("mouseout",() =>{
-    souris.style.display = "none";
+    souris.style.display = "block";
 });
 
 
